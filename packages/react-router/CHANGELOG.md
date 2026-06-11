@@ -1,5 +1,12 @@
 # `react-router`
 
+## v7.17.1
+
+### Patch Changes
+
+- Fix server handler prerender responses when using `ssr: false` and `future.v8_trailingSlashAwareDataRequests: true`. Avoids false positive "SPA Mode" detection when serving prerendered paths ([#15173](https://github.com/remix-run/react-router/pull/15173))
+- Use the `ServerRouter` nonce for nonce-aware SSR components when they don't provide their own value so strict CSP pages can load them. ([#15170](https://github.com/remix-run/react-router/pull/15170))
+
 ## v7.17.0
 
 ### Minor Changes
